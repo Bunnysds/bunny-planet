@@ -240,7 +240,7 @@
                     <div class="flex items-center gap-2.5 min-w-[120px] sm:min-w-[160px] cursor-pointer" onclick="navigateTo('home')">
                         <div class="relative w-9 h-9 rounded-full bg-stone-950 flex items-center justify-center flex-shrink-0 shadow-sm">
                             <div id="mini-vinyl" class="w-8 h-8 rounded-full overflow-hidden relative bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
-                                <img src="01.jpg" alt="Mini Cover" class="w-full h-full object-cover" onerror="this.style.display='none';">
+                                <img src="./01.jpg" alt="Mini Cover" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute w-1.5 h-1.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 inset-0 m-auto z-10"></div>
                         </div>
@@ -344,13 +344,15 @@
                         <div class="absolute inset-28 rounded-full border border-stone-800/90 opacity-60"></div>
                         <div class="absolute inset-36 rounded-full border border-stone-900/90 opacity-40"></div>
 
-                        <div class="w-24 sm:w-28 h-24 sm:h-28 rounded-full overflow-hidden relative border border-stone-950/20 flex items-center justify-center z-10 transition-colors duration-1000 shadow-inner bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
+                        <!-- 1.6x Enlarged Photo Container (Scaled from w-24 sm:w-28 up to w-36 sm:w-44 for beautiful high fidelity) -->
+                        <div class="w-36 sm:w-44 h-36 sm:h-44 rounded-full overflow-hidden relative border border-stone-950/20 flex items-center justify-center z-10 transition-colors duration-1000 shadow-inner bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
                             <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-200/90 select-none">
                                 <span class="font-serif italic text-[11px] sm:text-xs tracking-[0.25em] font-semibold text-white">BUNNY</span>
                                 <span class="text-[5px] sm:text-[6px] opacity-60 tracking-[0.25em] mt-1.5 uppercase font-mono">ESSENCE</span>
                             </div>
 
-                            <img src="01.jpg" alt="Bunny Portrait" class="absolute inset-0 w-full h-full object-cover opacity-95 dark:opacity-90 transition-opacity duration-700" onerror="this.style.display='none';">
+                            <!-- Image source configured as relative './01.jpg' with absolute visibility and no restrictive onerror -->
+                            <img src="./01.jpg" alt="Bunny Portrait" class="absolute inset-0 w-full h-full object-cover opacity-95 dark:opacity-90 transition-opacity duration-700">
                             <div class="absolute inset-0 bg-purple-950/5 pointer-events-none mix-blend-multiply"></div>
                             <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-20"></div>
                         </div>
@@ -439,7 +441,7 @@
                         <!-- Cassette Tape Window -->
                         <div class="relative w-full h-[185px] rounded-2xl overflow-hidden border border-black/10 dark:border-white/5 bg-black/80 shadow-inner flex flex-col justify-between p-2">
                             <div class="absolute inset-0 z-0">
-                                <img src="02.jpg" alt="Bunny Graduation" class="w-full h-full object-cover opacity-75 grayscale-[0.1] contrast-[1.05]" onerror="this.onerror=null; this.src='https://placehold.co/400x533/73529b/ffffff?text=BUNNY'">
+                                <img src="./02.jpg" alt="Bunny Graduation" class="w-full h-full object-cover opacity-75 grayscale-[0.1] contrast-[1.05]" onerror="this.onerror=null; this.src='https://placehold.co/400x533/73529b/ffffff?text=BUNNY'">
                                 <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 mix-blend-overlay"></div>
                             </div>
 
@@ -739,7 +741,7 @@
                                     <div class="absolute inset-4.5 rounded-full border border-stone-800/80"></div>
                                     <!-- Center Sticker (Enlarged to 48px/w-12 h-12 with no internal padding for ultra-crisp showcase) -->
                                     <div class="w-12 h-12 rounded-full overflow-hidden bg-white border border-stone-950 flex items-center justify-center relative z-10">
-                                        <img src="03.png" alt="想念食品" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/ef4444/ffffff?text=XN'">
+                                        <img src="./03.png" alt="想念食品" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/ef4444/ffffff?text=XN'">
                                     </div>
                                     <div class="absolute inset-0 m-auto w-2 h-2 rounded-full bg-stone-100 border border-stone-300 z-20 pointer-events-none"></div>
                                 </div>
@@ -754,7 +756,7 @@
                                     <div class="absolute inset-4.5 rounded-full border border-stone-800/80"></div>
                                     <!-- Center Sticker (Enlarged to 48px/w-12 h-12 with no internal padding) -->
                                     <div class="w-12 h-12 rounded-full overflow-hidden bg-white border border-stone-950 flex items-center justify-center relative z-10">
-                                        <img src="04.png" alt="万怡医学" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/22c55e/ffffff?text=HY'">
+                                        <img src="./04.png" alt="万怡医学" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/22c55e/ffffff?text=HY'">
                                     </div>
                                     <div class="absolute inset-0 m-auto w-2 h-2 rounded-full bg-stone-100 border border-stone-300 z-20 pointer-events-none"></div>
                                 </div>
@@ -769,7 +771,7 @@
                                     <div class="absolute inset-4.5 rounded-full border border-stone-800/80"></div>
                                     <!-- Center Sticker (Enlarged to 48px/w-12 h-12 with no internal padding) -->
                                     <div class="w-12 h-12 rounded-full overflow-hidden bg-white border border-stone-950 flex items-center justify-center relative z-10">
-                                        <img src="05.png" alt="云读东方" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/a855f7/ffffff?text=YD'">
+                                        <img src="./05.png" alt="云读东方" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/a855f7/ffffff?text=YD'">
                                     </div>
                                     <div class="absolute inset-0 m-auto w-2 h-2 rounded-full bg-stone-100 border border-stone-300 z-20 pointer-events-none"></div>
                                 </div>
@@ -784,7 +786,7 @@
                                     <div class="absolute inset-4.5 rounded-full border border-stone-800/80"></div>
                                     <!-- Center Sticker (Enlarged to 48px/w-12 h-12 with no internal padding) -->
                                     <div class="w-12 h-12 rounded-full overflow-hidden bg-white border border-stone-950 flex items-center justify-center relative z-10">
-                                        <img src="06.jpg" alt="千岛" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/100x100/6366f1/ffffff?text=QD'">
+                                        <img src="./06.jpg" alt="千岛" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/100x100/6366f1/ffffff?text=QD'">
                                     </div>
                                     <div class="absolute inset-0 m-auto w-2 h-2 rounded-full bg-stone-100 border border-stone-300 z-20 pointer-events-none"></div>
                                 </div>
@@ -800,7 +802,7 @@
                                 <div class="space-y-3">
                                     <div class="flex items-center gap-3">
                                         <div class="lg:hidden w-8 h-8 rounded-full overflow-hidden border border-red-200 bg-white flex-shrink-0">
-                                            <img src="03.png" alt="想念" class="w-full h-full object-contain">
+                                            <img src="./03.png" alt="想念" class="w-full h-full object-contain">
                                         </div>
                                         <span class="text-[9px] font-mono tracking-widest text-red-500 bg-red-500/10 px-2 py-0.5 rounded-md font-medium">2022.06 - 2022.08</span>
                                     </div>
@@ -817,7 +819,7 @@
                                 <div class="space-y-3">
                                     <div class="flex items-center gap-3">
                                         <div class="lg:hidden w-8 h-8 rounded-full overflow-hidden border border-green-200 bg-white flex-shrink-0">
-                                            <img src="04.png" alt="万怡" class="w-full h-full object-contain">
+                                            <img src="./04.png" alt="万怡" class="w-full h-full object-contain">
                                         </div>
                                         <span class="text-[9px] font-mono tracking-widest text-green-600 bg-green-500/10 px-2 py-0.5 rounded-md font-medium">2023.02 - 2023.07</span>
                                     </div>
@@ -834,7 +836,7 @@
                                 <div class="space-y-3">
                                     <div class="flex items-center gap-3">
                                         <div class="lg:hidden w-8 h-8 rounded-full overflow-hidden border border-purple-200 bg-white flex-shrink-0">
-                                            <img src="05.png" alt="云读东方" class="w-full h-full object-contain">
+                                            <img src="./05.png" alt="云读东方" class="w-full h-full object-contain">
                                         </div>
                                         <span class="text-[9px] font-mono tracking-widest text-purple-500 bg-purple-500/10 px-2 py-0.5 rounded-md font-medium">2023.10 - 2024.12</span>
                                     </div>
@@ -851,7 +853,7 @@
                                 <div class="space-y-3">
                                     <div class="flex items-center gap-3">
                                         <div class="lg:hidden w-8 h-8 rounded-full overflow-hidden border border-indigo-200 bg-white flex-shrink-0">
-                                            <img src="06.jpg" alt="千岛" class="w-full h-full object-cover">
+                                            <img src="./06.jpg" alt="千岛" class="w-full h-full object-cover">
                                         </div>
                                         <span class="text-[9px] font-mono tracking-widest text-indigo-500 bg-indigo-500/10 px-2 py-0.5 rounded-md font-medium">2025.03 - 2025.10</span>
                                     </div>
@@ -859,7 +861,7 @@
                                     <h3 class="text-sm font-bold tracking-wider text-album-lightText dark:text-album-darkText">C2C运营</h3>
                                 </div>
                                 <p class="text-[10px] text-stone-500 dark:text-stone-400 leading-relaxed font-light border-t border-stone-200/20 pt-2.5 mt-2">
-                                    展会集市运营 / 交易场景拓展 / 潮玩活动运营 / platform生态环境治理
+                                    展会集市运营 / 交易场景拓展 / 潮玩活动运营 / 平台生态治理
                                 </p>
                             </div>
 
@@ -1179,9 +1181,10 @@
         </section>
 
         <!-- TRACK 05: CONTACT SECTION -->
-        <section id="contact" class="hidden opacity-0 transition-opacity duration-500 py-16 md:py-24 min-h-[70vh] flex flex-col items-center justify-center">
-            <div class="max-w-4xl w-full mx-auto text-center space-y-12">
-                <!-- Title Block -->
+        <section id="contact" class="hidden opacity-0 transition-opacity duration-500 py-12 md:py-20 min-h-[75vh] flex items-center justify-center">
+            <div class="max-w-4xl w-full text-center space-y-12">
+                
+                <!-- Section Head -->
                 <div class="space-y-3">
                     <span class="text-[10px] tracking-[0.3em] text-album-accent dark:text-album-accentLight font-light uppercase block">TRACK 05 // ENCORE</span>
                     <h2 class="text-3xl sm:text-4xl font-light tracking-tight font-serif italic text-album-accent dark:text-album-accentLight">
@@ -1192,39 +1195,40 @@
                     </p>
                 </div>
 
-                <p class="text-xs sm:text-sm font-light text-stone-500 dark:text-stone-400 leading-relaxed max-w-xl mx-auto font-sans">
+                <p class="text-xs sm:text-sm font-light text-stone-500 dark:text-stone-400 leading-relaxed max-w-xl mx-auto">
                     期待与你共同探索充满创意的未来。无论是商业合作、学术探讨还是灵感共鸣，都欢迎随时敲响我的星际电波！
                 </p>
-
-                <!-- CONTACT METHOD BANNER (Centered Grid with Premium Lightweight fonts) -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 max-w-4xl mx-auto w-full no-print" id="contact-details-box">
+                
+                <!-- Direct Contacts with Light Weight Font -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto pt-6 no-print font-light text-stone-700 dark:text-stone-200" id="contact-details-box">
                     
                     <!-- Email Card -->
-                    <a href="mailto:2546481031@qq.com" class="group p-6 rounded-3xl bg-white/20 dark:bg-stone-900/20 border border-purple-200/10 dark:border-stone-800/10 backdrop-blur-md shadow-sm hover:border-album-accent/40 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center space-y-3 min-h-[140px]">
-                        <div class="w-10 h-10 rounded-2xl bg-album-accent/10 flex items-center justify-center text-album-accent group-hover:scale-105 transition-transform">
+                    <a href="mailto:2546481031@qq.com" class="group p-8 rounded-3xl bg-white/20 dark:bg-stone-900/20 border border-purple-200/10 dark:border-stone-800/10 backdrop-blur-md shadow-sm hover:border-album-accent/40 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center space-y-4 min-h-[160px]">
+                        <div class="w-11 h-11 rounded-2xl bg-album-accent/10 flex items-center justify-center text-album-accent group-hover:scale-105 transition-transform">
                             <i data-lucide="mail" class="w-5 h-5"></i>
                         </div>
-                        <span class="text-[8px] font-mono tracking-widest text-stone-400 dark:text-stone-500 uppercase">EMAIL / 邮件</span>
-                        <span class="tracking-wide text-base font-light text-album-lightText dark:text-album-darkText truncate w-full">2546481031@qq.com</span>
+                        <span class="text-[8px] font-mono tracking-widest text-stone-400 dark:text-stone-500 uppercase">EMAIL / 邮箱</span>
+                        <span class="tracking-wide text-base sm:text-lg font-light text-album-lightText dark:text-album-darkText truncate w-full">2546481031@qq.com</span>
                     </a>
                     
                     <!-- Location Card -->
-                    <div class="p-6 rounded-3xl bg-white/20 dark:bg-stone-900/20 border border-purple-200/10 dark:border-stone-800/10 backdrop-blur-md shadow-sm hover:border-album-accent/40 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center space-y-3 min-h-[140px]">
-                        <div class="w-10 h-10 rounded-2xl bg-album-accent/10 flex items-center justify-center text-album-accent">
+                    <div class="p-8 rounded-3xl bg-white/20 dark:bg-stone-900/20 border border-purple-200/10 dark:border-stone-800/10 backdrop-blur-md shadow-sm hover:border-album-accent/40 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center space-y-4 min-h-[160px]">
+                        <div class="w-11 h-11 rounded-2xl bg-album-accent/10 flex items-center justify-center text-album-accent">
                             <i data-lucide="map-pin" class="w-5 h-5"></i>
                         </div>
                         <span class="text-[8px] font-mono tracking-widest text-stone-400 dark:text-stone-500 uppercase">LOCATION / 现居</span>
-                        <span class="tracking-wide text-base font-light text-album-lightText dark:text-album-darkText">上海 · 全国/远程协作</span>
+                        <span class="tracking-wide text-base sm:text-lg font-light text-album-lightText dark:text-album-darkText">上海 · 全国/远程协作</span>
                     </div>
                     
-                    <!-- Telephone & WeChat Card -->
-                    <a href="tel:13103870972" class="group p-6 rounded-3xl bg-white/20 dark:bg-stone-900/20 border border-purple-200/10 dark:border-stone-800/10 backdrop-blur-md shadow-sm hover:border-album-accent/40 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center space-y-3 min-h-[140px]">
-                        <div class="w-10 h-10 rounded-2xl bg-album-accent/10 flex items-center justify-center text-album-accent group-hover:scale-105 transition-transform">
+                    <!-- Telephone Card -->
+                    <a href="tel:13103870972" class="group p-8 rounded-3xl bg-white/20 dark:bg-stone-900/20 border border-purple-200/10 dark:border-stone-800/10 backdrop-blur-md shadow-sm hover:border-album-accent/40 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center space-y-4 min-h-[160px]">
+                        <div class="w-11 h-11 rounded-2xl bg-album-accent/10 flex items-center justify-center text-album-accent group-hover:scale-105 transition-transform">
                             <i data-lucide="phone" class="w-5 h-5"></i>
                         </div>
                         <span class="text-[8px] font-mono tracking-widest text-stone-400 dark:text-stone-500 uppercase">TELEPHONE / 微信同号</span>
-                        <span class="tracking-wide text-base font-light text-album-lightText dark:text-album-darkText">13103870972</span>
+                        <span class="tracking-wide text-base sm:text-lg font-light text-album-lightText dark:text-album-darkText">13103870972</span>
                     </a>
+
                 </div>
             </div>
         </section>
@@ -1536,7 +1540,7 @@
                 {
                     tag: "EXHIBITION & CULTURE CURATION",
                     title: "医学会展全案运营",
-                    context: "万怡医学是国内领先 of 学术会议服务平台，专注于生物医药等领域高端学术会议策划与运营。我作为市场文案策划，负责了大型医药展会文案、媒体合作、内容及活动的全链路闭环。",
+                    context: "万怡医学是国内领先的医学会议服务平台，专注于生物医药、医疗器械等领域的高端学术会议策划与运营。我作为市场文案策划，负责8场大型医药展会的宣传推广、媒体合作、内容运营与活动策划全链路工作。",
                     url: "https://my.feishu.cn/wiki/SqrwwvlQxijR73kf8qQczDGVnpd?from=from_copylink",
                     style: "ipad",
                     icon: "layers",
@@ -1547,7 +1551,7 @@
                 {
                     tag: "SOCIAL MEDIA CAMPAIGN",
                     title: "千岛潮玩鉴定营销活动",
-                    context: "千岛是国内领先的潮玩卡牌交易平台，潮玩鉴定作为平台核心增值服务，承担着建立用户信任、提升交易转化的重要作用。我作为C2C运营，负责潮玩鉴定板块的活动策划、用户运营、多渠道引流与数据复盘工作。",
+                    context: "千岛是国内领先的潮玩卡牌交易平台，潮玩鉴定作为平台核心增值服务，承担着建立用户信任、提升交易转化、强化平台专业形象的重要作用。我作为C2C运营，负责潮玩鉴定板块的活动策划、用户运营、多渠道引流与数据复盘全链路工作。",
                     url: "https://my.feishu.cn/wiki/HSOnwknrhie5V1kdoWicwirInjc?from=from_copylink",
                     style: "ipad",
                     icon: "star",
@@ -1556,14 +1560,14 @@
                 {
                     tag: "COMMUNITY USER OPERATIONS",
                     title: "千岛一口价服务场景业务拓展",
-                    context: "千岛作为国内领先的潮玩卡牌交易平台，在在线鉴别服务验证成功后，亟需拓展更多服务交易场景，扩充平台业务生态。我作为C2C运营，独立负责交易赛道的服务场景探索与拓展，完成从0-1的业务全链落地。",
+                    context: "千岛作为国内领先的潮玩卡牌交易平台，在在线鉴别服务验证成功后，亟需拓展更多服务交易场景，扩充平台业务生态。我作为C2C运营，独立负责交易赛道的服务场景探索与拓展，从市场调研、场景筛选、可行性分析到服务商搭建、运营落地，完成从0-1的业务拓展全流程。",
                     url: "https://my.feishu.cn/wiki/WXtZwn0hZiABUak4GGRcaTQrnqd?from=from_copylink",
                     style: "ipad",
                     icon: "trending-up",
                     barColor: "bg-green-500"
                 }
             ],
-            port3: [ // 商稿 (Stripped of redundant inline descriptions as requested)
+            port3: [ // 商稿
                 {
                     tag: "CHILDREN SCIENCE SCRIPT",
                     title: "儿童漫画物理学脚本（全5册）",
@@ -1588,7 +1592,7 @@
                     tag: "WECHAT PUBLIC ACCOUNT",
                     title: "微信公众号",
                     style: "phone",
-                    context: "运营个人公众号“三的立方”，选题策划、推文撰写，产出多篇10W+文章，单月数万级引流。",
+                    context: "运营个人公众号“三的立方”，选题策划、推文撰写，产出多篇10W+文章，单月涨粉2000+。",
                     url: "https://my.feishu.cn/wiki/PHrvwH71xi7OyJkxnWccej0Fnuh?from=from_copylink",
                     icon: "message-circle",
                     barColor: "bg-blue-500"
@@ -1597,7 +1601,7 @@
                     tag: "RED BOOK MARKETING",
                     title: "小红书",
                     style: "phone",
-                    context: "熟悉小红书算法机制和流量推荐机制，通过高画质和精细文案策划多篇百万曝光笔记。",
+                    context: "熟悉 platform 内容分发逻辑、话题营销，有丰富的品牌账号运营经验；个人账号运营单篇点击量5W+，获得官方同人创作激励。",
                     url: "https://xhslink.com/m/3sqWSmyAFpO",
                     icon: "instagram",
                     barColor: "bg-blue-500"
@@ -1606,7 +1610,7 @@
                     tag: "TIKTOK SHORT VIDEO",
                     title: "抖音",
                     style: "phone",
-                    context: "熟悉短视频策划制作流程，独立输出剧情及知识脚本，负责多款单品推流及转化起量。",
+                    context: "个人账号剪辑运营，熟悉网络热点与圈层传播逻辑，1个月涨粉1W+，视频平均观看量10W+。（现转为个人日常运营）",
                     url: "https://my.feishu.cn/wiki/Hn6FwFPHSit70pko3SvcR2Cqnqg?from=from_copylink",
                     icon: "video",
                     barColor: "bg-blue-500"
@@ -1649,27 +1653,27 @@
             book1: { tag: "空间主体", title: "《身体、空间与后现代性》", author: "包亚明", category: "media", context: "解构现代主体在拟态空间中的身份异化与空间叙事，在虚拟化的媒介连接里，提供极具洞察的交往底座。" },
             book2: { tag: "消费史", title: "《制造消费者：消费主义全球史》", author: "安东尼·加卢佐", category: "media", context: "系统梳理了商品如何从必需品上升为身份幻象与符号。在研究潮玩消费心智时，帮助厘清圈层陪伴的精神溢价。" },
             book3: { tag: "存在力量", title: "《我身上有个不可战胜的夏天》", author: "阿尔贝·加缪", category: "exist", context: "在隆冬的荒诞中，寻回热望与自我救赎。这股不向平庸低头的坚韧生命力，是所有内容创作最底层、不可战胜的核心火源。" },
-            book4: { tag: "游戏人", title: "《游戏的人》", author: "约翰·赫伊津哈", category: "exist", context: "阐述游戏是人类神死仪式、艺术与文化创造的底层精神重镇，为探讨C2C潮玩和线上社区的自发信任提供了坚实的理论。" },
+            book4: { tag: "游戏人", title: "《游戏的人》", author: "约翰·赫伊津哈", category: "exist", context: "阐述游戏是人类神圣仪式、艺术与文化创造的底层精神重镇，为探讨C2C潮玩和线上社区的自发信任和娱乐规则设计提供了坚实的理论。" },
             book5: { tag: "传播观念", title: "《对空言说：传播的观念史》", author: "约翰·杜海姆·彼得斯", category: "media", context: "指出人类最深刻的传播渴望不是数据对接，而是脆弱且充满隔阂的灵魂渴望。理解受众无法完全沟通的脆弱性，才懂怎么说真话。" },
             book6: { tag: "神话考据", title: "《妖怪说》", author: "张云", category: "story", context: "打通中国传统民俗志怪美学脉络，用深厚考据重现东方奇诡玄妙幻想。为国风出版与科普脚本创作提供源源不断的灵感墨源。" },
             book7: { tag: "流行史学", title: "《明朝那些事儿》", author: "当年明月", category: "story", context: "将厚重僵硬的历史转译为让人手不释卷、高爽感、情绪张力拉满的爆款写法，堪称新媒体叙事与节奏张力的集大成典范。" },
             book8: { tag: "女性伤痛", title: "《房思琪的初恋乐园》", author: "林奕含", category: "gender", context: "关于语言与美学坠入毁灭性陷阱的痛苦记录。这本沉重的书促使创作者在面对公共领域发声时，永远对文字的力量保持崇高的敬畏、克制与温热。" },
             book9: { tag: "编剧圣经", title: "《故事：材质、结构、风格和银幕剧作的原理》", author: "罗伯特·麦基", category: "story", context: "叙事与编剧领域的必修圣经，系统揭示了如何通过核心价值冲突、危机和高潮设计扣人心弦的结构，是打磨少儿科普漫画故事的坚实支柱。" },
             book10: { tag: "女性主义", title: "《第二性》", author: "西模娜·德·波伏娃", category: "gender", context: "“女人不是天生的，而是后天形成的。”系统解构了历史与秩序对女性符号的枷锁，帮助创作者在面对女性圈层表达时，提供极具洞察的冷静视野。" },
-            book11: { tag: "现象学", title: "《隐喻的身体》", author: "梅洛·庞蒂", category: "media", context: "探寻身体与感官知觉的建构模型。对于拟物美学和指尖微交互，提供了突破数字屏幕局限、重归触觉感知的现象学底气。" },
+            book11: { tag: "现象学", title: "《隐喻的身体》", author: "梅洛·庞蒂", category: "media", context: "探寻身体与感官知觉的建构模型。对于拟物美学 and 指尖微交互，提供了突破数字屏幕局限、重归触觉感知的现象学底气。" },
             book12: { tag: "具身技术", title: "《技术中的身体》", author: "马克·汉森", category: "media", context: "探讨数字技术如何重塑我们的具身认知。提醒我们拒绝做‘景观幻象的制造者’，致力于用真实的生活拥抱重建人与人的纯粹交往。" },
             book13: { tag: "心流智慧", title: "《无为的能量》", author: "杨定一", category: "exist", context: "探讨如何通过不刻意为之的柔性无为，顺应规律、破除紧绷，在日常高强度的内容与策划工作中实现阻力最低、充沛流淌的创作心流。" },
-            book14: { tag: "乡土差序", title: "《乡土中国》", author: "费托通", category: "media", context: "经典的社会差序格局分析，阐述基于人伦情感构建的紧密信任结构，对私域社群运营具有极高的底层启发意义。" },
+            book14: { tag: "乡土差序", title: "《乡土中国》", author: "费托通", category: "media", context: "经典的社会差序格局分析，阐述基于人伦情感构建的紧密信任结构，对私域社群运营 and KOC人际传播具有极高的底层启发意义。" },
             book15: { tag: "叙事节点", title: "《救猫咪》", author: "布莱克·斯奈德", category: "story", context: "经典的电影编剧指南。说明了如何通过关键的微小行动迅速建立读者与角色的强烈同理心，常看常新的情节架构法则。" },
             book16: { tag: "创作空间", title: "《一间只属于自己的房间》", author: "弗吉尼亚·伍尔夫", category: "gender", context: "“女性要从事真正的创作，必须拥有一间锁上门的房间与稳定的经济独立。”独立与探索，是打造一宇宙数字角落性能的浪漫指引。" },
             book17: { tag: "虚无盔甲", title: "《不存在的骑士》", author: "伊塔洛·卡尔维诺", category: "story", context: "仅靠“坚强意志与守则”支撑的空盔甲，反思现代秩序与规训对肉身与热情的抽离，是一则极精巧的讽刺荒诞小说。" },
             book18: { tag: "独立精神", title: "《一只特立独行的猪》", author: "王小波", category: "story", context: "一头拒绝接受阉割、跳出既定屠轨道并活出野性的猪。在技术疯狂加速的时代，是提醒自己保持独立思考与自由人格的浪漫指引。" },
-            book19: { tag: "智性思考", title: "《送你一颗子弹》", author: "刘瑜", category: "story", context: "用诙谐、高知智性且锐利的笔触，解构日常生活的虚无与沉闷，展现了极佳的生活幽默、敏锐细节以及不落俗套的观察。" },
+            book19: { tag: "智性思考", title: "《送你一颗子弹》", author: "刘瑜", category: "story", context: "用诙谐、高知智性且锐利的笔触，解构日常生活的虚无与沉闷，展现了极佳的生活幽默、敏锐细节以及不落俗套 of 观察。" },
             book20: { tag: "自我诞生", title: "《德米安》", author: "赫尔曼·黑塞", category: "exist", context: "“鸟要挣脱出壳，蛋就是世界。人要诞生，就必须摧毁一个世界。”寻找自我、走向独立人格的痛苦而温润的历程。" },
             book21: { tag: "求索者", title: "《悉达多》", author: "赫尔曼·黑塞", category: "exist", context: "经历了声色犬马与孤独苦修，最终在河水的喧嚣中听见万物合一。‘知识可以传授，智慧却无法传授’，自我觉醒无法速成。" },
-            book22: { tag: "灵魂博弈", title: "《荒原狼》", author: "荒原狼", category: "exist", context: "在体面理智与荒野孤寂狼性之间痛苦徘徊。唯有接受生命复杂的调和与狂笑，才能在魔幻剧场中拼凑出灵魂的拼图。" },
-            book23: { tag: "精神与爱欲", title: "《精神与爱欲》", author: "赫尔曼·黑塞", category: "exist", context: "理智与艺术、灵性与感性的双重奏。象征了人类灵魂深处秩序与热忱、理性与爱欲 the 激烈冲突与最终融合。" },
-            book24: { tag: "新穷人", title: "《工作、消费主义和新穷人》", author: "齐格蒙特·鲍曼", category: "media", context: "在消费社会，不合格消费者由于不具备审美溢价与消费选择权，被迫成为新穷人，深刻重构了对于年轻潮流消费心理的认知。" },
+            book22: { tag: "灵魂博弈", title: "《荒原狼》", author: "赫尔曼·黑塞", category: "exist", context: "在体面理智与荒野孤寂狼性之间痛苦徘徊。唯有接受生命复杂的调和与狂笑，才能在魔幻剧场中拼凑出灵魂的拼图。" },
+            book23: { tag: "爱欲交融", title: "《精神与爱欲》", author: "赫尔曼·黑塞", category: "exist", context: "严于律己的精神学者与用感官感知的浪漫流浪艺术家，象征了人类灵魂深处秩序与热忱、理性与爱欲 the 激烈冲突与最终融合。" },
+            book24: { tag: "新穷人", title: "《工作、消费主义和新穷人》", author: "齐格蒙特·鲍曼", category: "media", context: "在消费社会，穷人不再是劳动力，而是由于不具备审美溢价与消费选择权的‘不合格消费者’，深刻重构了对于年轻潮流消费心理的认知。" },
             book25: { tag: "荒诞宿命", title: "《河边的错误》", author: "余华", category: "story", context: "余华经典的荒诞先锋小说，通过追查连环杀人案而被困死于荒谬逻辑怪圈、逐渐发疯的故事，将宿命的荒诞感描摹得精妙绝伦。" },
             book26: { tag: "社会速写", title: "《绝叫》", author: "叶真中显", category: "gender", context: "通过悲剧跌宕一生的冷酷速写，无情戳穿现代冷漠都市背后对女性底层的剥夺，读来震震人心且引人长效反思。" },
             book27: { tag: "爱之羁绊", title: "《一个叫欧维的男人决定去死》", author: "弗雷德里克·巴克曼", category: "exist", context: "古板到极致、失去爱妻后准备寻短见的老头，在一群吵闹邻居的强闯下重获生命色泽的故事，关于爱与羁绊对死亡的温柔对抗。" },
@@ -1866,8 +1870,20 @@
 
             if (active) {
                 bars.forEach(bar => {
-                    if (bar) bar.classList.add('sound-bar-active');
+                    if (bar) {
+                        bar.classList.add('sound-bar-active');
+                        bar.style.height = '20px';
+                    }
                 });
+                
+                waveInterval = setInterval(() => {
+                    bars.forEach(bar => {
+                        if (bar) {
+                            const ranH = Math.floor(Math.random() * 18) + 6;
+                            bar.style.height = `${ranH}px`;
+                        }
+                    });
+                }, 150);
             } else {
                 bars.forEach(bar => {
                     if (bar) {
@@ -1882,26 +1898,20 @@
             event.stopPropagation();
             const dropdown = document.getElementById('playlist-dropdown');
             if (dropdown) {
-                if (dropdown.classList.contains('opacity-0')) {
-                    dropdown.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
-                    dropdown.classList.add('opacity-100', 'scale-100');
-                } else {
-                    dropdown.classList.remove('opacity-100', 'scale-100');
-                    dropdown.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-                }
+                dropdown.classList.toggle('opacity-0');
+                dropdown.classList.toggle('scale-95');
+                dropdown.classList.toggle('pointer-events-none');
             }
         }
 
         function navigatePrev() {
-            let prevIndex = currentTrackIndex - 1;
-            if (prevIndex < 0) prevIndex = tracks.length - 1;
-            navigateTo(tracks[prevIndex]);
+            currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+            navigateTo(tracks[currentTrackIndex]);
         }
 
         function navigateNext() {
-            let nextIndex = currentTrackIndex + 1;
-            if (nextIndex >= tracks.length) nextIndex = 0;
-            navigateTo(tracks[nextIndex]);
+            currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+            navigateTo(tracks[currentTrackIndex]);
         }
 
         function pauseToHome() {
@@ -1933,9 +1943,42 @@
                 const percent = ((currentTrackIndex + 1) / tracks.length) * 100;
                 progressBar.style.width = `${percent}%`;
             }
-            if (miniVinyl && isPlaying) {
+            if (miniVinyl) {
                 miniVinyl.classList.add('spin-active');
             }
+        }
+
+        function highlightExperienceCard(nodeId) {
+            const targetCard = document.getElementById(`exp-card-${nodeId}`);
+            if (!targetCard) return;
+
+            for (let i = 1; i <= 4; i++) {
+                const card = document.getElementById(`exp-card-${i}`);
+                const stem = document.getElementById(`exp-stem-${i}`);
+                if (card) {
+                    card.classList.remove('scale-[1.03]', 'border-red-400', 'border-green-400', 'border-purple-400', 'border-indigo-400', 'shadow-md');
+                }
+                if (stem) {
+                    stem.classList.remove('opacity-100');
+                }
+            }
+
+            let themeColorClass = '';
+            switch(nodeId) {
+                case 1: themeColorClass = 'border-red-400'; break;
+                case 2: themeColorClass = 'border-green-400'; break;
+                case 3: themeColorClass = 'border-purple-400'; break;
+                case 4: themeColorClass = 'border-indigo-400'; break;
+            }
+
+            targetCard.classList.add('scale-[1.03]', themeColorClass, 'shadow-md');
+            
+            const targetStem = document.getElementById(`exp-stem-${nodeId}`);
+            if (targetStem) {
+                targetStem.classList.add('opacity-100');
+            }
+
+            targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
         function navigateTo(targetId) {
@@ -1990,6 +2033,47 @@
                     updatePlayerUI(targetId);
                 }
             }
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const sunIcon = document.getElementById('theme-icon-sun');
+            const moonIcon = document.getElementById('theme-icon-moon');
+
+            if (!html || !sunIcon || !moonIcon) return;
+            
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        function playPianoTone(freq) {
+            try {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                const ctx = new AudioContext();
+                const osc = ctx.createOscillator();
+                const gainNode = ctx.createGain();
+                
+                osc.type = 'triangle'; 
+                osc.frequency.setValueAtTime(freq, ctx.currentTime);
+                
+                gainNode.gain.setValueAtTime(0.18, ctx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2);
+                
+                osc.connect(gainNode);
+                gainNode.connect(ctx.destination);
+                
+                osc.start();
+                osc.stop(ctx.currentTime + 1.2);
+            } catch (error) {}
         }
 
         function selectPortfolioKey(portId, freq) {
@@ -2076,39 +2160,6 @@
                 }, 50);
 
             }, 450);
-        }
-
-        function highlightExperienceCard(nodeId) {
-            const targetCard = document.getElementById(`exp-card-${nodeId}`);
-            if (!targetCard) return;
-
-            for (let i = 1; i <= 4; i++) {
-                const card = document.getElementById(`exp-card-${i}`);
-                const stem = document.getElementById(`exp-stem-${i}`);
-                if (card) {
-                    card.classList.remove('scale-[1.03]', 'border-red-400', 'border-green-400', 'border-purple-400', 'border-indigo-400', 'shadow-md');
-                }
-                if (stem) {
-                    stem.classList.remove('opacity-100');
-                }
-            }
-
-            let themeColorClass = '';
-            switch(nodeId) {
-                case 1: themeColorClass = 'border-red-400'; break;
-                case 2: themeColorClass = 'border-green-400'; break;
-                case 3: themeColorClass = 'border-purple-400'; break;
-                case 4: themeColorClass = 'border-indigo-400'; break;
-            }
-
-            targetCard.classList.add('scale-[1.03]', themeColorClass, 'shadow-md');
-            
-            const targetStem = document.getElementById(`exp-stem-${nodeId}`);
-            if (targetStem) {
-                targetStem.classList.add('opacity-100');
-            }
-
-            targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
         function openInteractiveMockup(portId, index) {
@@ -2354,7 +2405,6 @@
             } catch (error) {}
         }
 
-        // Expanded offline multi-option stochastic resonance database for Star-Rabbit AI to prevent offline errors
         async function fetchGeminiCoResonance(userPrompt) {
             const apiKey = ""; 
 
@@ -2396,177 +2446,45 @@
             return await fetchLocalMockResonance(userPrompt);
         }
 
-        // Intelligent local mock engine with rich variation trees for Today's Fortune and Mood Tuning
         async function fetchLocalMockResonance(promptText) {
             await new Promise(resolve => setTimeout(resolve, 800 + Math.random() * 600));
             const query = promptText.toLowerCase().trim();
 
-            // Check if triggers Today's Fortune (🔮 抽取今日星轨运势)
             if (query.includes("运势") || query.includes("占卜") || query.includes("心境") || query.includes("磁场")) {
                 const fortunes = [
-                    `✨ 叮咚！检测到你此时的星体磁场属于【仙女座微风旋律】！
-                    
-                    🔮 **今日星轨运势**：
-                    你今日的引力指数非常舒适，生活中的重力正在微微下调。适合慢下来把繁杂的思绪“打包下架”。就像黑胶唱片落下前那几秒轻微的静电声，那些生活中的不完美，其实只是美妙前奏的轻响。
-                    
-                    🎵 **为你调频的治愈歌单推荐**：
-                    《重力微调 // Retro Lofi Space Serenade》
-                    
-                    💡 **星星兔的温柔便签**：
-                    今天允许自己像一片树叶一样温和下落，累了就抱抱小兔，自我觉醒无法速成，慢慢来比较快。`,
-
-                    `✨ 咻——！金色的彗星划过，星轨指针停留在【双子座流星和弦】！
-                    
-                    🔮 **今日星轨运势**：
-                    灵感与创意的电离层今天格外活跃！你今天会遇到意想不到的惊喜，可能是一句让你释怀的话，也可能是一个绝妙的新方案点子。星际电波很流畅，勇敢地去表达你的奇思妙想吧！
-                    
-                    🎵 **为你调频的治愈歌单推荐**：
-                    《星际漫游指南 // Cosmic Synth Wave》
-                    
-                    💡 **星星兔的温柔便签**：
-                    相信工具与技术是第一生产力，但更要相信你心中那股不可战胜的夏天！用好奇心去敲响明天的琴键吧！`,
-
-                    `✨ 滴答，滴答... 星兔电台为你锁定了温柔的【织女星温润轨道】！
-                    
-                    🔮 **今日星轨运势**：
-                    今天适合进行“深度交往”与“心灵治愈”。收起多余的外界传感器，把时间留给自己和几位知心的朋友。在看似荒诞、紧绷的世界节奏里，你会在书页、落叶或茶香里寻回你那一朵独特的“小玫瑰”。
-                    
-                    🎵 **为你调频的治愈歌单推荐**：
-                    《玫瑰灌溉日记 // Dreamy Acoustic Folk》
-                    
-                    💡 **星星兔的温柔便签**：
-                    “真正重要的东西用眼睛是看不见的，必须用心灵去感受。” 别担心，你花费在热爱之物上的时间，绝不会被宇宙抹去。`,
-
-                    `✨ 哇喔！检测到极罕见的超感磁场——【仙后座静谧潮汐】正在向你涌来！
-                    
-                    🔮 **今日星轨运势**：
-                    今日的你散发着一种安宁、内敛却极具穿透力的智慧。非常适合安静地处理手头堆积的复杂难题。不需要勉强自己合群，做个温柔的“局外人”，反而能看清海浪退去后的贝壳与珍珠。
-                    
-                    🎵 **为你调频的治愈歌单推荐**：
-                    《深海漂流 // Ethereal Piano Drift》
-                    
-                    💡 **星星兔的温柔便签**：
-                    正如《局外人》与《我与地坛》的感悟，宿命或许有其荒谬的一面，但在内心的废墟古园里，你总能勘破生活最真挚的底色。`,
-
-                    `✨ 璀璨星图展开！你今天的共振能量是【猎户座星云梦境】！
-                    
-                    🔮 **今日星轨运势**：
-                    浪漫指数突破 98%！今天适合做白日梦、拼贴灵感墙、听黑胶或去大自然里收集空气中的微小情绪。你敲下的每一个字符、脑海中闪过的每一个画面分镜，都是星云尘埃给你的馈赠。
-                    
-                    🎵 **为你调频的治愈歌单推荐**：
-                    《叙事跃迁 // Vintage Orchestral Serenade》
-                    
-                    💡 **星星兔的温柔便签**：
-                    保持你的精神角落，像伍尔夫说的那样，拥有一间“锁上门的属于自己的房间”，它会保护你永远闪闪发光！`,
-
-                    `✨ 哔哔哔！星兔天线接收到了动感十足的【脉冲星节奏律动】！
-                    
-                    🔮 **今日星轨运势**：
-                    执行力与行动力满格（能量度 95%）！今天你就像是一个“一人乐队”，不管是运营活动、策划写稿还是学习新工具，都能有条不紊、精准落槌。别犹豫，把复杂的问题拆成可执行的步骤，今天就去落地它！
-                    
-                    🎵 **为你调频的治愈歌单推荐**：
-                    《架子鼓与合成器 // High-Beat Electronic Lo-fi》
-                    
-                    💡 **星星兔的温柔便签**：
-                    相信你自己的全案落地方法论，你走出的每一步，都在把虚无的星图踩成坚实的脚印！`
+                    `✨ 叮咚！检测到你此时的星体磁场属于【仙女座微风旋律】！\n\n🔮 **今日星轨运势**：\n你今日的引力指数非常舒适，生活中的重力正在微微下调。适合慢下来把繁杂的思绪“打包下架”。就像黑胶唱片落下前那几秒轻微的静电声，那些生活中的不完美，其实只是美妙前奏的轻响。\n\n🎵 **为你调频的治愈歌单推荐**：\n《重力微调 // Retro Lofi Space Serenade》\n\n💡 **星星兔的温柔便签**：\n今天允许自己像一片树叶一样温和下落，累了就抱抱小兔，自我觉醒无法速成，慢慢来比较快。`,
+                    `✨ 咻——！金色的彗星划过，星轨指针停留在【双子座流星和弦】！\n\n🔮 **今日星轨运势**：\n灵感与创意的电离层今天格外活跃！你今天会遇到意想不到的惊喜，可能是一句让你释怀的话，也可能是一个绝妙的新方案点子。星际电波很流畅，勇敢地去表达你的奇思妙想吧！\n\n🎵 **为你调频的治愈歌单推荐**：\n《星际漫游指南 // Cosmic Synth Wave》\n\n💡 **星星兔的温柔便签**：\n相信工具与技术是第一生产力，但更要相信你心中那股不可战胜的夏天！用好奇心去敲响明天的琴键吧！`,
+                    `✨ 滴答，滴答... 星兔电台为你锁定了温柔的【织女星温润轨道】！\n\n🔮 **今日星轨运势**：\n今天适合进行“深度交往”与“心灵治愈”。收起多余的外界传感器，把时间留给自己和几位知心的朋友。在看似荒诞、紧绷的世界节奏里，你会在书页、落叶或茶香里寻回你那一朵独特的“小玫瑰”。\n\n🎵 **为你调频的治愈歌单推荐**：\n《玫瑰灌溉日记 // Dreamy Acoustic Folk》\n\n💡 **星星兔的温柔便签**：\n“真正重要的东西用眼睛是看不见的，必须用心灵去感受。” 别担心，你花费在热爱之物上的时间，绝不会被宇宙抹去。`,
+                    `✨ 哇喔！检测到极罕见的超感磁场——【仙后座静谧潮汐】正在向你涌来！\n\n🔮 **今日星轨运势**：\n今日的你散发着一种安宁、内敛却极具穿透力的智慧。非常适合安静地处理手头堆积的复杂难题。不需要勉强自己合群，做个温柔的“局外人”，反而能看清海浪退去后的贝壳与珍珠。\n\n🎵 **为你调频的治愈歌单推荐**：\n《深海漂流 // Ethereal Piano Drift》\n\n💡 **星星兔的温柔便签**：\n正如《局外人》与《我与地坛》的感悟，宿命或许有其荒谬的一面，但在内心的废墟古园里，你总能勘破生活最真挚的底色。`,
+                    `✨ 璀璨星图展开！你今天的共振能量是【猎户座星云梦境】！\n\n🔮 **今日星轨运势**：\n浪漫指数突破 98%！今天适合做白日梦、拼贴灵感墙、听黑胶或去大自然里收集空气中的微小情绪。你敲下的每一个字符、脑海中闪过的每一个画面分镜，都是星云尘埃给你的馈赠。\n\n🎵 **为你调频的治愈歌单推荐**：\n《叙事跃迁 // Vintage Orchestral Serenade》\n\n💡 **星星兔的温柔便签**：\n保持你的精神角落，像伍尔夫说的那样，拥有一间“锁上门的属于自己的房间”，它会保护你永远闪闪发光！`,
+                    `✨ 哔哔哔！星兔天线接收到了动感十足的【脉冲星节奏律动】！\n\n🔮 **今日星轨运势**：\n执行力与行动力满格（能量度 95%）！今天你就像是一个“一人乐队”，不管是运营活动、策划写稿还是学习新工具，都能有条不紊、精准落槌。别犹豫，把复杂的问题拆成可执行的步骤，今天就去落地它！\n\n🎵 **为你调频的治愈歌单推荐**：\n《架子鼓与合成器 // High-Beat Electronic Lo-fi》\n\n💡 **星星兔的温柔便签**：\n相信你自己的全案落地方法论，你走出的每一步，都在把虚无的星图踩成坚实的脚印！`
                 ];
                 const index = Math.floor(Math.random() * fortunes.length);
                 return fortunes[index];
             }
 
-            // Check if triggers Mood Tuning (🎵 心情磁场调频)
             if (query.includes("调频") || query.includes("便签") || query.includes("心情")) {
                 const moodNotes = [
-                    `✨ 呼叫寻音人 🐰！心情调频电波已接入【半空悬停 // Zero Gravity Space Station】。
-                    
-                    💡 **给你的星际治愈便签**：
-                    今天的你，是不是像一颗在固定轨道上高速运转、有些疲惫的小卫星？宇宙里不只有永无止境的星际航线，还有温暖的星云。累了就抱抱小兔子，允许自己像一片羽毛一样在失重状态下温和下落。
-                    
-                    🎵 **今晚的舒缓白噪音**：
-                    《深夜霓虹雨 // Midnight City Rainfall Ambient》
-                    
-                    ✨ 慢下来，调整呼吸，等电量格重新充满。小兔会一直在这里陪着你。`,
-
-                    `✨ 心情磁场已自动调频至【温暖书橱 // Cozy Reading Serenade Corner】。
-                    
-                    💡 **给你的星际治愈便签**：
-                    快节奏的技术加速是不是让你感到有些紧绷和信息焦虑？没关系，星星兔为你打开了 Bunny 的私家书橱。今天就从消费主义和拟态环境的“媒介景观”里跳脱出来，去《小王子》或《德米安》的世界里，寻找一次灵魂与灵魂最纯粹的隔空拥抱。
-                    
-                    🎵 **伴读背景曲目**：
-                    《阅读小夜曲 // Vintage Velvet Ambient Piano》
-                    
-                    ✨ “鸟要挣脱出壳，蛋就是世界。” 允许自己慢慢蜕变，你已经做得很好了。`,
-
-                    `✨ 嗡嗡——！电波接入充满元气的【晨曦微光 // Morning Solar Flare】！
-                    
-                    💡 **给你的星际治愈便签**：
-                    如果你正处于迷茫或自我怀疑的迷雾中，请记住：不温不火的日常，也是在温柔地积累副歌的爆发力。你做过的每一个策划、写过的每一篇文案、表达过的每一个真诚想法，都是埋在土里的种子，它们会在春天连成最美的和弦。
-                    
-                    🎵 **能量补给曲目**：
-                    《野性成长 // Indie Pop Beats》
-                    
-                    ✨ 挺起胸膛，带上好奇心，去体验这个世界吧！星星兔在后面为你敲鼓呐喊！`,
-
-                    `✨ 电波轻响，这里是宁静的【深海漂流 // Deep Sea Gravity Drift】。
-                    
-                    💡 **给你的星际治愈便签**：
-                    如果今天外界的杂音太多，那就按下“静音键”吧。你不需要活在别人的评价体系里，也不用成为完美的“合格消费者”。你的存在本身，就是宇宙中最独特、最不可替代的一段旋律。
-                    
-                    🎵 **自愈静音曲目**：
-                    《无为的能量 // Absolute Silence & Soft Synths》
-                    
-                    ✨ 闭上眼睛，让那些纷扰如潮水般退去。感受自己平稳的心跳，今晚好眠。`,
-
-                    `✨ 叮！心情磁场已切换到富有故事张力的【落日映画 // Sunset Film Reel】。
-                    
-                    💡 **给你的星际治愈便签**：
-                    生活就像一出没有剪辑完的童话漫画分镜。有低谷、有搞笑的台词，也有出人意料的反转。不要因为当下的几个废片镜头而否定整部电影。只要坚持你的故事执念，高潮总会如约而至。
-                    
-                    🎵 **电影感背景曲**：
-                    《英雄之旅 // Cinematic Orchestral Lofi》
-                    
-                    ✨ 拿好你的人生脚本，你是你世界里最棒的导演与主角！`,
-
-                    `✨ 咻——！星兔电台带你降落到温暖舒适的【小兔草莓园 // Strawberry Garden Party】！
-                    
-                    💡 **给你的星际治愈便签**：
-                    今天的能量主题是：**原谅自己的不完美，享受微小的快乐**！去喝一杯喜欢的奶茶，摸一摸毛茸茸的小猫小狗，或者在键盘上随意弹几声 do-re-mi。这些微小的、没有目的的快乐，才是支撑我们走过漫长星系的终极护甲。
-                    
-                    🎵 **草莓园欢快乐章**：
-                    《小步舞曲 // Sweet Ukulele Ambient》
-                    
-                    ✨ 快乐是第一生产力！把紧绷的神经松开，和星星兔一起蹦蹦跳跳吧！✨`
+                    `✨ 呼叫寻音人 🐰！心情调频电波已接入【半空悬停 // Zero Gravity Space Station】。\n\n💡 **给你的星际治愈便签**：\n今天的你，是不是像一颗在固定轨道上高速运转、有些疲惫的小卫星？宇宙里不只有永无止境的星际航线，还有温暖的星云。累了就抱抱小兔子，允许自己像一片羽毛一样在失重状态下温和下落。\n\n🎵 **今晚的舒缓白噪音**：\n《深夜霓虹雨 // Midnight City Rainfall Ambient》\n\n✨ 慢下来，调整呼吸，等电量格重新充满。小兔会一直在这里陪着你。`,
+                    `✨ 心情磁场已自动调频至【温暖书橱 // Cozy Reading Serenade Corner】。\n\n💡 **给你的星际治愈便签**：\n快节奏的技术加速是不是让你感到有些紧绷和信息焦虑？没关系，星星兔为你打开了 Bunny 的私家书橱。今天就从消费主义和拟态环境的“媒介景观”里跳脱出来，去《小王子》或《德米安》的世界里，寻找一次灵魂与灵魂最纯粹的隔空拥抱。\n\n🎵 **伴读背景曲目**：\n《阅读小夜曲 // Vintage Velvet Ambient Piano》\n\n✨ “鸟要挣脱出壳，蛋就是世界。” 允许自己慢慢蜕变，你已经做得很好了。`,
+                    `✨ 嗡嗡——！电波接入充满元气的【晨曦微光 // Morning Solar Flare】！\n\n💡 **给你的星际治愈便签**：\n如果你正处于迷茫或自我怀疑的迷雾中，请记住：不温不火的日常，也是在温柔地积累副歌的爆发力。你做过的每一个策划、写过的每一篇文案、表达过的每一个真诚想法，都是埋在土里的种子，它们会在春天连成最美的和弦。\n\n🎵 **能量补给曲目**：\n《野性成长 // Indie Pop Beats》\n\n✨ 挺起胸膛，带上好奇心，去体验这个世界吧！星星兔在后面为你敲鼓呐喊！`,
+                    `✨ 电波轻响，这里是宁静的【深海漂流 // Deep Sea Gravity Drift】。\n\n💡 **给你的星际治愈便签**：\n如果今天外界的杂音太多，那就按下“静音键”吧。你不需要活在别人的评价体系里，也不用成为完美的“合格消费者”。你的存在本身，就是宇宙中最独特、最不可替代的一段旋律。\n\n🎵 **自愈静音曲目**：\n《无为的能量 // Absolute Silence & Soft Synths》\n\n✨ 闭上眼睛，让那些纷扰如潮水般退去。感受自己平稳的心跳，今晚好眠。`,
+                    `✨ 叮！心情磁场已切换到富有故事张力的【落日映画 // Sunset Film Reel】。\n\n💡 **给你的星际治愈便签**：\n生活就像一出没有剪辑完的童话漫画分镜。有低谷、有搞笑的台词，也有出人意料的反转。不要因为当下的几个废片镜头而否定整部电影。只要坚持你的故事执念，高潮总会如约而至。\n\n🎵 **电影感背景曲**：\n《英雄之旅 // Cinematic Orchestral Lofi》\n\n✨ 拿好你的人生脚本，你是你世界里最棒的导演与主角！`,
+                    `✨ 咻——！星兔电台带你降落到温暖舒适的【小兔草莓园 // Strawberry Garden Party】！\n\n💡 **给你的星际治愈便签**：\n今天的能量主题是：**原谅自己的不完美，享受微小的快乐**！去喝一杯喜欢的奶茶，摸一摸毛茸茸的小猫小狗，或者在键盘上随意弹几声 do-re-mi。这些微小的、没有目的的快乐，才是支撑我们走过漫长星系的终极护甲。\n\n🎵 **草莓园欢快乐章**：\n《小步舞曲 // Sweet Ukulele Ambient》\n\n✨ 快乐是第一生产力！把紧绷的神经松开，和星星兔一起蹦蹦跳跳吧！✨`
                 ];
                 const index = Math.floor(Math.random() * moodNotes.length);
                 return moodNotes[index];
             }
 
-            // Fallback for general greetings or personal questions
             if (query.includes("你好") || query.includes("哈喽") || query.includes("hello") || query.includes("hi")) {
-                return `✨ 嗨！亲界的前行者！我是星星兔 (Star-Rabbit) 🐰。在浩瀚的互联网星系里收到你的无线电波，我开心得耳朵都要立起来了！
-                
-                你可以点选下方的快捷标签，让我为你出谋划策、抽取今日运势，或者在页面中自由探寻一下张玉萍 (Bunny) 的经历细节哦！`;
+                return `✨ 嗨！亲界的前行者！我是星星兔 (Star-Rabbit) 🐰。在浩瀚的互联网星系里收到你的无线电波，我开心得耳朵都要立起来了！\n\n你可以点选下方的快捷标签，让我为你出谋划策、抽取今日运势，或者在页面中自由探寻一下张玉萍 (Bunny) 的经历细节哦！`;
             }
 
             if (query.includes("谁") || query.includes("张玉萍") || query.includes("bunny") || query.includes("工作") || query.includes("求职")) {
-                return `✨ 让我向你隆重介绍这颗星球的领航员 —— **张玉萍 (Bunny)**！
-                
-                她是一个游走于**感性故事叙事**与**硬核运营执行力**之间的跨界能手：
-                - 🎓 **学硕背景**：本科广播电视学、硕士新闻与传播（研究受众接收与媒介）。
-                - 💼 **实战经历**：做过品牌百万引流的食品新媒体运营，主导过大型C2C潮玩线下市集从0-1落地。
-                - ✍️ **签约作者**：执笔过十余万字的科普漫画脚本与中式美学出版物。
-                - 💻 **AI 效能派**：DeepSeek/Gemini工作流降本增效的极客实践者。
-                
-                如果你正在寻找一位既懂用户痛点、又会全案落地、文字功底扎实还懂AI效率的合伙人，她就是最完美的选择！✨`;
+                return `✨ 让我向你隆重介绍这颗星球的领航员 —— **张玉萍 (Bunny)**！\n\n她是一个游走于**感性故事叙事**与**硬核运营执行力**之间的跨界能手：\n- 🎓 **学硕背景**：本科广播电视学、硕士新闻与传播（研究受众接收与媒介）。\n- 💼 **实战经历**：做过品牌百万引流的食品新媒体运营，主导过大型C2C潮玩线下市集从0-1落地。\n- ✍️ **签约作者**：执笔过十余万字的科普漫画脚本与中式美学出版物。\n- 💻 **AI 效能派**：DeepSeek/Gemini工作流降本增效的极客实践者。\n\n如果你正在寻找一位既懂用户痛点、又会全案落地、文字功底扎实还懂AI效率的合伙人，她就是最完美的选择！✨`;
             }
 
-            return `✨ 收到你发出的独特星际信号！虽然我这边的量子雷达暂时没能完全匹配这个句子，但我能感受到你温润的磁场频率。
-            
-            你可以尝试问我这些好玩的星际话题哦：
-            - “帮我测试一下今天的宇宙运势和推荐歌单！”
-            - “张玉萍有哪些好玩的性格特质？”
-            
-            或者你可以直接在 **Encore** 板块，通过邮箱或电话，与她本人开始深度共振！✨`;
+            return `✨ 收到你发出的独特星际信号！虽然我这边的量子雷达暂时没能完全匹配这个句子，但我能感受到你温润的磁场频率。\n\n你可以尝试问我这些好玩的星际话题哦：\n- “帮我测试一下今天的宇宙运势和推荐歌单！”\n- “张玉萍有哪些好玩的性格特质？”\n\n或者你可以直接在 **Encore** 板块，通过邮箱或电话，与她本人开始深度共振！✨`;
         }
 
         async function handleChatSubmit(e) {
@@ -2677,26 +2595,6 @@
             `;
             container.appendChild(bubble);
             container.scrollTop = container.scrollHeight;
-        }
-
-        function toggleTheme() {
-            const html = document.documentElement;
-            const sunIcon = document.getElementById('theme-icon-sun');
-            const moonIcon = document.getElementById('theme-icon-moon');
-
-            if (!html || !sunIcon || !moonIcon) return;
-            
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.classList.add('dark');
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-                localStorage.setItem('theme', 'dark');
-            }
         }
     </script>
 </body>
