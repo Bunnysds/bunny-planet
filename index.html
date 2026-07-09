@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUNNY'S 星球 | 极简专辑履历</title>
+    <title>BUNNY'S 星球</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -346,15 +346,21 @@
 
                         <!-- 1.6x Enlarged Photo Container (Scaled from w-24 sm:w-28 up to w-36 sm:w-44 for beautiful high fidelity) -->
                         <div class="w-36 sm:w-44 h-36 sm:h-44 rounded-full overflow-hidden relative border border-stone-950/20 flex items-center justify-center z-10 transition-colors duration-1000 shadow-inner bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
-                            <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-200/90 select-none">
+                            
+                            <!-- Image source configured with multi-level case-insensitive and extension fallback to avoid empty white block -->
+                            <img src="./01.jpg" alt="Bunny Portrait" class="absolute inset-0 w-full h-full object-cover opacity-90 dark:opacity-85 transition-opacity duration-700 z-0" onerror="if(!this.dataset.tried){this.dataset.tried=1; this.src='01.JPG';} else if(this.dataset.tried==1){this.dataset.tried=2; this.src='01.png';} else if(this.dataset.tried==2){this.dataset.tried=3; this.src='01.jpeg';} else {this.style.opacity='0';}">
+                            
+                            <!-- Dark Overlay Tint inside album cover -->
+                            <div class="absolute inset-0 bg-purple-950/10 pointer-events-none mix-blend-multiply z-10"></div>
+
+                            <!-- Text overlay: Layered on top (z-10) with text-shadow so it mimics custom-printed vinyl label beautifully -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-200/90 select-none z-20 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
                                 <span class="font-serif italic text-[11px] sm:text-xs tracking-[0.25em] font-semibold text-white">BUNNY</span>
-                                <span class="text-[5px] sm:text-[6px] opacity-60 tracking-[0.25em] mt-1.5 uppercase font-mono">ESSENCE</span>
+                                <span class="text-[5px] sm:text-[6px] opacity-80 tracking-[0.25em] mt-1.5 uppercase font-mono">ESSENCE</span>
                             </div>
 
-                            <!-- Image source configured as relative './01.jpg' with absolute visibility and no restrictive onerror -->
-                            <img src="./01.jpg" alt="Bunny Portrait" class="absolute inset-0 w-full h-full object-cover opacity-95 dark:opacity-90 transition-opacity duration-700">
-                            <div class="absolute inset-0 bg-purple-950/5 pointer-events-none mix-blend-multiply"></div>
-                            <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-20"></div>
+                            <!-- Tiny middle record hole -->
+                            <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-30"></div>
                         </div>
                         
                         <div class="absolute inset-0 bg-stone-950/10 dark:bg-stone-950/30 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-30">
@@ -1246,7 +1252,7 @@
                     <!-- 15+ Years Web Novel Badge -->
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-album-accent/10 border border-album-accent/20 text-album-accent dark:text-album-accentLight text-[10px] font-mono tracking-wider uppercase">
                         <i data-lucide="sparkles" class="w-3.5 h-3.5 animate-pulse text-amber-500"></i>
-                        <span>✨ 15+ 年资深网文阅读经历 / 丰富网文阅读经历，熟悉女频及圈层生态</span>
+                        <span>✨ 15+ 年丰富网文阅读经历，熟悉女频及圈层生态</span>
                     </div>
 
                     <p class="text-xs text-stone-400 dark:text-stone-500 font-mono tracking-wider uppercase mt-3">
