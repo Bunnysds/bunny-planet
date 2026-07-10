@@ -345,18 +345,20 @@
                         <div class="absolute inset-28 rounded-full border border-stone-800/90 opacity-60"></div>
                         <div class="absolute inset-36 rounded-full border border-stone-900/90 opacity-40"></div>
 
-                        <!-- 1.6x Enlarged Photo Container (Scaled from w-24 sm:w-28 up to w-36 sm:w-44 for beautiful high fidelity) -->
-                        <div class="w-36 sm:w-44 h-36 sm:h-44 rounded-full overflow-hidden relative border border-stone-950/20 shadow-inner bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
-                            <!-- Main Portrait Image (Clean, robust layout matched exactly with the fully functional mini-vinyl styling) -->
-                            <img src="./01.jpg" alt="Bunny Portrait" class="w-full h-full object-cover opacity-95 dark:opacity-90 transition-opacity duration-700" onerror="this.style.opacity='0';">
-                            
-                            <!-- Foreground overlays with strict z-indices to guarantee rendering order -->
+                        <!-- 1.6x Enlarged Photo Container (Precisely structured like mini-vinyl to prevent broken placeholder issue) -->
+                        <div class="w-36 sm:w-44 h-36 sm:h-44 rounded-full overflow-hidden relative border border-stone-950/20 shadow-inner flex items-center justify-center bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d] z-10">
+                            <!-- Backup Text Brand shown beneath image loading -->
                             <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-200/90 select-none z-10 pointer-events-none">
                                 <span class="font-serif italic text-[11px] sm:text-xs tracking-[0.25em] font-semibold text-white">BUNNY</span>
                                 <span class="text-[5px] sm:text-[6px] opacity-60 tracking-[0.25em] mt-1.5 uppercase font-mono">ESSENCE</span>
                             </div>
-                            <div class="absolute inset-0 bg-purple-950/5 pointer-events-none mix-blend-multiply z-20"></div>
-                            <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-30"></div>
+
+                            <!-- Real Photo: Loads directly in normal flow. Self-heals (display: none) on load failure to prevent browser white boxes! -->
+                            <img src="./01.jpg" alt="Bunny Portrait" class="w-full h-full object-cover block z-0" onerror="this.style.display='none';">
+                            
+                            <div class="absolute inset-0 bg-purple-950/5 pointer-events-none mix-blend-multiply z-10"></div>
+                            <!-- Central Vinyl Pivot Point -->
+                            <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-20 pointer-events-none"></div>
                         </div>
                         
                         <div class="absolute inset-0 bg-stone-950/10 dark:bg-stone-950/30 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-30">
