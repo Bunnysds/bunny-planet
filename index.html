@@ -345,7 +345,7 @@
                         <div class="absolute inset-28 rounded-full border border-stone-800/90 opacity-60"></div>
                         <div class="absolute inset-36 rounded-full border border-stone-900/90 opacity-40"></div>
 
-                        <!-- 最终修复版：图片显示 + 点击正常 -->
+                        <!-- 双保险版：图片显示 + 怎么点都有反应 -->
                         <div id="photo-container" style="
                             width: 144px;
                             height: 144px;
@@ -355,14 +355,13 @@
                             border: 1px solid rgba(12, 10, 22, 0.2);
                             box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);
                             background: linear-gradient(135deg, #7a599f 0%, #5c407d 50%, #25133d 100%);
-                            /* 整个图片容器不阻挡点击 */
                             pointer-events: none;
-                            z-index: 5;
                         ">
-                            <!-- 图片 -->
+                            <!-- 图片本身也绑定点击事件，双保险 -->
                             <img 
                                 src="01.jpg" 
                                 alt="Bunny Portrait"
+                                onclick="togglePlayback()"
                                 style="
                                     position: absolute;
                                     top: 0;
@@ -371,6 +370,8 @@
                                     height: 100%;
                                     object-fit: cover;
                                     display: block;
+                                    cursor: pointer;
+                                    pointer-events: auto;
                                 "
                                 onerror="this.style.display='none'; document.getElementById('fallback-content').style.opacity=1"
                             >
@@ -389,6 +390,9 @@
                                 text-shadow: 0 1px 3px rgba(0,0,0,0.5);
                                 opacity: 0;
                                 transition: opacity 0.3s;
+                                cursor: pointer;
+                                pointer-events: auto;
+                                onclick="togglePlayback()"
                             ">
                                 <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 12px; letter-spacing: 0.25em; font-weight: 600; color: white;">BUNNY</span>
                                 <span style="font-size: 6px; opacity: 0.7; letter-spacing: 0.25em; margin-top: 6px; text-transform: uppercase; font-family: monospace; color: white;">ESSENCE</span>
