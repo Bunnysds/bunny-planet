@@ -236,11 +236,12 @@
             <div id="subpage-nav" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 transition-all duration-500 opacity-0 pointer-events-none no-print w-[calc(100%-2rem)] md:w-auto max-w-xl">
                 <div class="flex items-center justify-between gap-3 px-4 py-2.5 rounded-full bg-white/60 dark:bg-stone-900/60 backdrop-blur-2xl border border-white/50 dark:border-white/5 shadow-[0_10px_30px_rgba(0,0,0,0.05)] w-full md:w-[520px]">
                     
-                    <!-- Left: Mini Cover & Info -->
+                    <!-- Left: Mini Cover & Info with Advanced Auto-Fallback Loader -->
                     <div class="flex items-center gap-2.5 min-w-[120px] sm:min-w-[160px] cursor-pointer" onclick="navigateTo('home')">
                         <div class="relative w-9 h-9 rounded-full bg-stone-950 flex items-center justify-center flex-shrink-0 shadow-sm">
                             <div id="mini-vinyl" class="w-8 h-8 rounded-full overflow-hidden relative bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
-                                <img src="./01.jpg" alt="Mini Cover" class="w-full h-full object-cover">
+                                <img src="./01.jpg" alt="Mini Cover" class="w-full h-full object-cover" 
+                                     onerror="if (this.src.endsWith('.jpg')) { this.src = './01.JPG'; } else if (this.src.endsWith('.JPG')) { this.src = './01.png'; } else if (this.src.endsWith('.png')) { this.src = './01.jpeg'; } else { this.style.display = 'none'; }">
                             </div>
                             <div class="absolute w-1.5 h-1.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 inset-0 m-auto z-10"></div>
                         </div>
@@ -346,21 +347,16 @@
 
                         <!-- 1.6x Enlarged Photo Container (Scaled from w-24 sm:w-28 up to w-36 sm:w-44 for beautiful high fidelity) -->
                         <div class="w-36 sm:w-44 h-36 sm:h-44 rounded-full overflow-hidden relative border border-stone-950/20 flex items-center justify-center z-10 transition-colors duration-1000 shadow-inner bg-gradient-to-br from-[#7a599f] via-[#5c407d] to-[#25133d]">
-                            
-                            <!-- Image source configured with multi-level case-insensitive and extension fallback to avoid empty white block -->
-                            <img src="./01.jpg" alt="Bunny Portrait" class="absolute inset-0 w-full h-full object-cover opacity-90 dark:opacity-85 transition-opacity duration-700 z-0" onerror="if(!this.dataset.tried){this.dataset.tried=1; this.src='01.JPG';} else if(this.dataset.tried==1){this.dataset.tried=2; this.src='01.png';} else if(this.dataset.tried==2){this.dataset.tried=3; this.src='01.jpeg';} else {this.style.opacity='0';}">
-                            
-                            <!-- Dark Overlay Tint inside album cover -->
-                            <div class="absolute inset-0 bg-purple-950/10 pointer-events-none mix-blend-multiply z-10"></div>
-
-                            <!-- Text overlay: Layered on top (z-10) with text-shadow so it mimics custom-printed vinyl label beautifully -->
-                            <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-200/90 select-none z-20 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-200/90 select-none">
                                 <span class="font-serif italic text-[11px] sm:text-xs tracking-[0.25em] font-semibold text-white">BUNNY</span>
-                                <span class="text-[5px] sm:text-[6px] opacity-80 tracking-[0.25em] mt-1.5 uppercase font-mono">ESSENCE</span>
+                                <span class="text-[5px] sm:text-[6px] opacity-60 tracking-[0.25em] mt-1.5 uppercase font-mono">ESSENCE</span>
                             </div>
 
-                            <!-- Tiny middle record hole -->
-                            <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-30"></div>
+                            <!-- Image source configured as relative './01.jpg' with absolute visibility and advanced multi-extension self-healing loader -->
+                            <img src="./01.jpg" alt="Bunny Portrait" class="absolute inset-0 w-full h-full object-cover opacity-95 dark:opacity-90 transition-opacity duration-700"
+                                 onerror="if (this.src.endsWith('.jpg')) { this.src = './01.JPG'; } else if (this.src.endsWith('.JPG')) { this.src = './01.png'; } else if (this.src.endsWith('.png')) { this.src = './01.jpeg'; } else { this.style.display = 'none'; }">
+                            <div class="absolute inset-0 bg-purple-950/5 pointer-events-none mix-blend-multiply"></div>
+                            <div class="absolute inset-0 m-auto w-4.5 h-4.5 rounded-full bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 shadow-inner z-20"></div>
                         </div>
                         
                         <div class="absolute inset-0 bg-stone-950/10 dark:bg-stone-950/30 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-30">
@@ -547,7 +543,7 @@
                                     <div class="w-3.5 h-3.5 rounded-full bg-stone-800 border border-stone-600 flex items-center justify-center overflow-hidden">
                                         <div class="w-full h-full bg-[radial-gradient(#444_0.7px,transparent_0.7px)] [background-size:2.2px_2.2px]"></div>
                                     </div>
-                                    <span class="absolute bottom-0 left-0 text-[5px] font-mono font-bold text-album-accent scale-75 opacity-70">R</span>
+                                    <span class="absolute bottom-0 right-0 text-[5px] font-mono font-bold text-album-accent scale-75 opacity-70">R</span>
                                 </div>
                                 <div class="w-1.5 h-4 bg-gradient-to-b from-stone-200 to-stone-300 border-x border-stone-300 shadow-xs -mt-1 rounded-b"></div>
                             </div>
@@ -1175,7 +1171,7 @@
                             <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">ChatGPT & Gemini</span>
                             <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">XMind / 飞书</span>
                             <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">秀米/135 编辑器</span>
-                            <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">稿定/可画</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">稿定/可画</span>
                             <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">SQL</span>
                             <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">Office</span>
                             <span class="px-3.5 py-1.5 rounded-full text-[10px] tracking-wider font-mono bg-white/35 dark:bg-stone-900/35 border border-purple-200/30 dark:border-purple-900/20 shadow-sm">CET-4</span>
@@ -1537,7 +1533,7 @@
                 {
                     tag: "EXHIBITION & C2C PLATFORM",
                     title: "2025QDF集市区从0-1落地执行",
-                    context: "作为千岛旗下核心展会 brand，QDF上海国际潮流收藏展览会是国内规模领先的潮流文化盛会。2025年7月新国博展首次大规模拓展集市区，我作为C2C运营独立负责集市区从0-1的整体策划与落地执行。",
+                    context: "作为千岛旗下核心展会 brand，QDF上海国际潮流收藏展览会是国内规模领先的潮流文化盛会。2025年7月新国博展首次大规模拓展集市区，我作为C2C运营独立负责集市区从0-1 of 整体策划与落地执行。",
                     url: "https://my.feishu.cn/wiki/FUJwwtm5liTiCbkTB9Lc6YWunkd?from=from_copylink",
                     style: "ipad",
                     icon: "compass",
@@ -1566,7 +1562,7 @@
                 {
                     tag: "COMMUNITY USER OPERATIONS",
                     title: "千岛一口价服务场景业务拓展",
-                    context: "千岛作为国内领先的潮玩卡牌交易平台，在在线鉴别服务验证成功后，亟需拓展更多服务交易场景，扩充平台业务生态。我作为C2C运营，独立负责交易赛道的服务场景探索与拓展，从市场调研、场景筛选、可行性分析到服务商搭建、运营落地，完成从0-1的业务拓展全流程。",
+                    context: "千岛作为国内领先的潮玩卡牌交易平台，在在线鉴别服务场景拓展。我作为C2C运营，独立负责交易赛道的服务场景探索与拓展，从市场调研、场景筛选、可行性分析到服务商搭建、运营落地，完成从0-1的业务拓展全流程。",
                     url: "https://my.feishu.cn/wiki/WXtZwn0hZiABUak4GGRcaTQrnqd?from=from_copylink",
                     style: "ipad",
                     icon: "trending-up",
@@ -2039,47 +2035,6 @@
                     updatePlayerUI(targetId);
                 }
             }
-        }
-
-        function toggleTheme() {
-            const html = document.documentElement;
-            const sunIcon = document.getElementById('theme-icon-sun');
-            const moonIcon = document.getElementById('theme-icon-moon');
-
-            if (!html || !sunIcon || !moonIcon) return;
-            
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.classList.add('dark');
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-                localStorage.setItem('theme', 'dark');
-            }
-        }
-
-        function playPianoTone(freq) {
-            try {
-                const AudioContext = window.AudioContext || window.webkitAudioContext;
-                const ctx = new AudioContext();
-                const osc = ctx.createOscillator();
-                const gainNode = ctx.createGain();
-                
-                osc.type = 'triangle'; 
-                osc.frequency.setValueAtTime(freq, ctx.currentTime);
-                
-                gainNode.gain.setValueAtTime(0.18, ctx.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2);
-                
-                osc.connect(gainNode);
-                gainNode.connect(ctx.destination);
-                
-                osc.start();
-                osc.stop(ctx.currentTime + 1.2);
-            } catch (error) {}
         }
 
         function selectPortfolioKey(portId, freq) {
@@ -2601,6 +2556,26 @@
             `;
             container.appendChild(bubble);
             container.scrollTop = container.scrollHeight;
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const sunIcon = document.getElementById('theme-icon-sun');
+            const moonIcon = document.getElementById('theme-icon-moon');
+
+            if (!html || !sunIcon || !moonIcon) return;
+            
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                localStorage.setItem('theme', 'dark');
+            }
         }
     </script>
 </body>
